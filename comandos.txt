@@ -1,0 +1,23 @@
+yarn init -y
+
+Bibliotecas usadadas:
+yarn add bcryptjs
+yarn add express
+yarn add jsonwebtoken
+yarn add knex
+yarn add mysql2
+yarn add uuid
+
+Biblioteca para váriavel de ambiente que foi comentado sobre:
+yarn add dotenv
+
+Comandos de migration utilizados (Knex):
+yarn knex migrate:make nameTable        | cria migration
+yarn knex migrate:latest        | sobe as migrations no banco de dados(atualizando os atributos)
+
+
+.gitignore      |   vocês podem escolher arquivos que não querem que sejam enviados para o github,
+                    por exemplo a pasta node_modules, que não tem necessidade de ser enviada, pois nela
+                    é onde fica os arquivos pertencentes a dependência instalada que vocês podem instalar
+                    somente dando um yarn(npm i) ou yarn install(npm install) e é bom vocês colocarem para
+                    ignorar as váriaveis de ambiente que eu havia comentado
